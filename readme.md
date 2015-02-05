@@ -15,7 +15,7 @@ return [
 ];
 ```
 4. Create a new database *larabook* and new user *root* with *1234* password on your local DB Server (in my case MySQL Server).
-5. Open your terminal, go to repository folder and type **"composer update"** in your terminal
+5. Open your terminal, go to repository folder and type **"composer update"** in your terminal and wait few minutes.
 6. Type: **"php artisan migrate"**
 7. Type: **"php artisan serve"**
 
