@@ -15,9 +15,9 @@ return [
 ];
 ```
 4. Create a new database *larabook* and new user *root* with *1234* password on your local DB Server (in my case MySQL Server).
-5. Open your terminal, go to repository folder and type **composer update** in your terminal
-6. Type: **php artisan migrate**
-7. Type **php artisan serve**
+5. Open your terminal, go to repository folder and type **"composer update"** in your terminal
+6. Type: **"php artisan migrate"**
+7. Type: **"php artisan serve"**
 
 ### How to run the tests
 1. Create *.env.testing.php* file:
@@ -32,8 +32,8 @@ return [
 ];
 ```
 2. Create a new database *larabook_testing*.
-3. Open your terminal, go to project folder and type **php artisan migrate --env=testing**
-4. Type **vendor/bin/codecept run**
+3. Open your terminal, go to project folder and type **"php artisan migrate --env=testing"**
+4. Type **"vendor/bin/codecept run"**
 
 ## Laravel PHP Framework
 
