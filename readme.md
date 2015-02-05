@@ -1,3 +1,40 @@
+## Small social network built on Laravel v4.2 (is similar to Twitter)
+
+### How to install on localhost
+1. Download repository and extract to any directory.
+2. If you don't have Composer, please install this: ([How to install Composer?](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx))
+3. Create *.env.php* file:
+```php
+<?php
+
+return [
+    'DB_HOST' => 'localhost',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => '1234',
+    'DB_NAME' => 'larabook'
+];
+```
+4. Create a new database *larabook* and new user *root* with *1234* password on your local DB Server (in my case MySQL Server).
+5. Open your terminal, go to repository folder and type **composer update** in your terminal
+6. Type: **php artisan migrate**
+7. Type **php artisan serve**
+
+### How to run the tests
+1. Create *.env.testing.php* file:
+```php
+<?php
+
+return [
+    'DB_HOST' => 'localhost',
+    'DB_USERNAME' => 'root',
+    'DB_PASSWORD' => '1234',
+    'DB_NAME' => 'larabook_testing'
+];
+```
+2. Create a new database *larabook_testing*.
+3. Open your terminal, go to project folder and type **php artisan migrate --env=testing**
+4. Type **vendor/bin/codecept run**
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
